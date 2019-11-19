@@ -7,7 +7,7 @@ LDFLAGS = -lcrypto
 all: $(BIN)
 
 $(BIN): $(SOURCE)
-	gcc $(CFLAGS) $(LDFLAGS) -o $@ $<
+	gcc -o $@ $< $(CFLAGS) $(LDFLAGS)
 
 .PHONY: clean
 clean:
